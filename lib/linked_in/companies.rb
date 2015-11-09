@@ -190,8 +190,10 @@ module LinkedIn
       elsif is_admin = options.delete(:is_admin)
         path += "?is-company-admin=#{CGI.escape(is_admin)}"
       else
-        path += "/~"
+        # path += "/~"
+        path
       end
+
     end
   end
 end
